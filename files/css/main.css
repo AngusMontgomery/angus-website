@@ -1,7 +1,7 @@
 /* 
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
+Project Name: Angus Website
+Client: Me
+Author: Me
 */
 
 /******************************************
@@ -9,6 +9,10 @@ Author: Your Name
 /*******************************************/
 
 /* add a list of colours used in the project */
+/* light gray background: #DEE0E2 
+ */
+
+/* typefaces: Space Mono for headers, Karla for body;
 
 /******************************************
 /* SENSIBLE DEFAULTS                   
@@ -19,6 +23,32 @@ Author: Your Name
 }
 img {
 	max-width:100%;
+}
+
+h1, h2, h3 {
+	font-family: 'Space Mono', monospace;
+}
+
+p {
+	font-family: 'Karla', sans-serif;
+}
+
+body {
+	background-color: #DEE0E2; 
+}
+
+.column-full {
+	width: 100%;
+}
+
+.column-one-third {
+	width: 33.33%;
+	float: left;
+	padding: 5px;
+}
+
+.grid-row {
+	clear: left;
 }
 
 /******************************************
