@@ -18,6 +18,8 @@ Author: Me
 /* SENSIBLE DEFAULTS                   
 /*******************************************/
 
+$primary-color: #DEE0E2;
+
 * {
      box-sizing: border-box;
 }
@@ -37,7 +39,7 @@ p {
 }
 
 body {
-	background-color: #DEE0E2; 
+	background-color: $primary-color; 
 }
 
 .column-full {
