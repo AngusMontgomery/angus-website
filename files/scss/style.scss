@@ -18,28 +18,31 @@ Author: Me
 /* SENSIBLE DEFAULTS                   
 /*******************************************/
 
-$primary-color: #DEE0E2;
+$background-color: #DEE0E2;
+$headline-font: 'Space Mono', monospace;
+$body-font: 'Karla', sans-serif;
 
 * {
      box-sizing: border-box;
 }
+.site-content{
+	margin-top: 2em;
+}
 img {
 	max-width:100%;
 	filter: grayscale(10%);
-	filter: drop-shadow(2px 2px 2px black);
-	height: 20em;
 }
 
 h1, h2, h3 {
-	font-family: 'Space Mono', monospace;
+	font-family: $headline-font;
 }
 
 p {
-	font-family: 'Karla', sans-serif;
+	font-family: $body-font;
 }
 
 body {
-	background-color: $primary-color; 
+	background-color: $background-color; 
 }
 
 .column-full {
@@ -58,22 +61,38 @@ body {
 
 .intro {
 	font-size: 3em;
-}
-
-.intro sup a {
-	color: red;
-}
-
-.intro a {
+	a {
 	font-weight: bold;
 	text-decoration: none;
 	color: black;
-}
-
-.intro a:hover { 
+	}
+	a:hover{
 	color:black;
 	text-decoration: underline;
-	text-decoration-color: red;
+	text-decoration-color: red;	
+	}
+	sup a {
+	color: red;	
+	}
+}
+
+.fa {
+	font-size: 2.5em;
+	padding: 0.2em;
+	color: black;
+}
+
+.navigation {
+  	font-family: $headline-font;
+  	font-size: 1.5em;
+  	position: fixed;
+  	right: 0;
+  	top: 10%;
+  	width: 8em;
+  	margin-top: -2.5em;
+  	a {
+  	color: black;
+  	}
 }
 
 
