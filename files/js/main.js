@@ -2,6 +2,7 @@ console.log('it works');
 
 $(document).ready(function() {
 
+$("#hidden-nav").hide();
 $("#current-section").hide();
 $("#interview-section").hide();
 $("#features-section").hide();
@@ -10,120 +11,294 @@ $("#talks-section").hide();
 $("#films-section").hide();
 
 $("#home-link").click(function(){
-	$("#current-section").hide();
-	$("#interview-section").hide();
-	$("#features-section").hide();
-	$("#projects-section").hide();
-	$("#talks-section").hide();
-	$("#films-section").hide();
+	$("#starting-content").slideDown();
+	$("#hidden-nav").slideUp();
+	$("#current-section").slideUp();
+	$("#interview-section").slideUp();
+	$("#features-section").slideUp();
+	$("#projects-section").slideUp();
+	$("#talks-section").slideUp();
+	$("#films-section").slideUp();
 })
 
 $("#current-link").click(function(){
-	$("#current-section").show();
+	$("#hidden-nav").slideDown();
+	$("#starting-content").slideUp();
+	$("#current-section").slideDown();
 	$("#interview-section").hide();
 	$("#features-section").hide();
 	$("#projects-section").hide();
 	$("#talks-section").hide();
 	$("#films-section").hide();
+	$("#interviews-link-1").removeClass("active-link");
+	$("#features-link-1").removeClass("active-link");
+	$("#projects-link-1").removeClass("active-link");
+	$("#talks-link-1").removeClass("active-link");
+	$("#films-link-1").removeClass("active-link");
+	$("#current-link-1").addClass("active-link");
 });
 
 $("#interviews-link").click(function(){
+	$("#hidden-nav").slideDown();
+	$("#starting-content").slideUp();
 	$("#current-section").hide();
-	$("#interview-section").show();
+	$("#interview-section").slideDown();
 	$("#features-section").hide();
 	$("#projects-section").hide();
 	$("#talks-section").hide();
 	$("#films-section").hide();
+	$("#features-link-1").removeClass("active-link");
+	$("#projects-link-1").removeClass("active-link");
+	$("#talks-link-1").removeClass("active-link");
+	$("#films-link-1").removeClass("active-link");
+	$("#current-link-1").removeClass("active-link");
+	$("#interviews-link-1").addClass("active-link");
 });
 
 $("#features-link").click(function(){
+	$("#hidden-nav").slideDown();
+	$("#starting-content").slideUp();
 	$("#current-section").hide();
 	$("#interview-section").hide();
-	$("#features-section").show();
+	$("#features-section").slideDown();
 	$("#projects-section").hide();
 	$("#talks-section").hide();
 	$("#films-section").hide();
+	$("#interviews-link-1").removeClass("active-link");
+	$("#projects-link-1").removeClass("active-link");
+	$("#talks-link-1").removeClass("active-link");
+	$("#films-link-1").removeClass("active-link");
+	$("#current-link-1").removeClass("active-link");
+	$("#features-link-1").addClass("active-link");
 });
 
 $("#projects-link").click(function(){
+	$("#hidden-nav").slideDown();
+	$("#starting-content").slideUp();
 	$("#current-section").hide();
 	$("#interview-section").hide();
 	$("#features-section").hide();
-	$("#projects-section").show();
+	$("#projects-section").slideDown();
 	$("#talks-section").hide();
 	$("#films-section").hide();
+	$("#interviews-link-1").removeClass("active-link");
+	$("#features-link-1").removeClass("active-link");
+	$("#talks-link-1").removeClass("active-link");
+	$("#films-link-1").removeClass("active-link");
+	$("#current-link-1").removeClass("active-link");
+	$("#projects-link-1").addClass("active-link");
 });
 
 $("#talks-link").click(function(){
+	$("#hidden-nav").slideDown();
+	$("#starting-content").slideUp();
 	$("#current-section").hide();
 	$("#interview-section").hide();
 	$("#features-section").hide();
 	$("#projects-section").hide();
-	$("#talks-section").show();
+	$("#talks-section").slideDown();
 	$("#films-section").hide();
+	$("#interviews-link-1").removeClass("active-link");
+	$("#features-link-1").removeClass("active-link");
+	$("#projects-link-1").removeClass("active-link");
+	$("#films-link-1").removeClass("active-link");
+	$("#current-link-1").removeClass("active-link");
+	$("#talks-link-1").addClass("active-link");
 });
 
 $("#films-link").click(function(){
+	$("#hidden-nav").slideDown();
+	$("#starting-content").slideUp();
 	$("#current-section").hide();
 	$("#interview-section").hide();
 	$("#features-section").hide();
 	$("#projects-section").hide();
 	$("#talks-section").hide();
-	$("#films-section").show();
+	$("#films-section").slideDown();
+	$("#interviews-link-1").removeClass("active-link");
+	$("#features-link-1").removeClass("active-link");
+	$("#projects-link-1").removeClass("active-link");
+	$("#talks-link-1").removeClass("active-link");
+	$("#current-link-1").removeClass("active-link");
+	$("#films-link-1").addClass("active-link");
 });
 
 $("#current-link-1").click(function(){
-	$("#current-section").show();
-	$("#interview-section").hide();
-	$("#features-section").hide();
-	$("#projects-section").hide();
-	$("#talks-section").hide();
-	$("#films-section").hide();
+if ($("#current-link-1").hasClass("active-link")) {
+	$("#starting-content").slideDown();
+	$("#hidden-nav").slideUp();
+	$("#current-section").slideUp();
+	$("#interview-section").slideUp();
+	$("#features-section").slideUp();
+	$("#projects-section").slideUp();
+	$("#talks-section").slideUp();
+	$("#films-section").slideUp();
+	$("#current-link-1").removeClass("active-link");
+}	else {
+	$("#hidden-nav").show();
+	$("#starting-content").slideUp();
+	$("#current-section").slideDown();
+	$("#interview-section").slideUp();
+	$("#features-section").slideUp();
+	$("#projects-section").slideUp();
+	$("#talks-section").slideUp();
+	$("#films-section").slideUp();
+	$("#interviews-link-1").removeClass("active-link");
+	$("#features-link-1").removeClass("active-link");
+	$("#projects-link-1").removeClass("active-link");
+	$("#talks-link-1").removeClass("active-link");
+	$("#films-link-1").removeClass("active-link");
+	$("#current-link-1").addClass("active-link");
+}
 });
 
 $("#interviews-link-1").click(function(){
-	$("#current-section").hide();
-	$("#interview-section").show();
-	$("#features-section").hide();
-	$("#projects-section").hide();
-	$("#talks-section").hide();
-	$("#films-section").hide();
+	if ($("#interviews-link-1").hasClass("active-link")) {
+	$("#starting-content").slideDown();
+	$("#hidden-nav").slideUp();
+	$("#current-section").slideUp();
+	$("#interview-section").slideUp();
+	$("#features-section").slideUp();
+	$("#projects-section").slideUp();
+	$("#talks-section").slideUp();
+	$("#films-section").slideUp();
+	$("#interviews-link-1").removeClass("active-link");
+}	else {
+	$("#hidden-nav").show();
+	$("#starting-content").slideUp();
+	$("#current-section").slideUp();
+	$("#interview-section").slideDown();
+	$("#features-section").slideUp();
+	$("#projects-section").slideUp();
+	$("#talks-section").slideUp();
+	$("#films-section").slideUp();
+	$("#current-link-1").removeClass("active-link");
+	$("#features-link-1").removeClass("active-link");
+	$("#projects-link-1").removeClass("active-link");
+	$("#talks-link-1").removeClass("active-link");
+	$("#films-link-1").removeClass("active-link");
+	$("#current-link-1").removeClass("active-link");
+	$("#interviews-link-1").addClass("active-link");
+}
 });
 
 $("#features-link-1").click(function(){
-	$("#current-section").hide();
-	$("#interview-section").hide();
-	$("#features-section").show();
-	$("#projects-section").hide();
-	$("#talks-section").hide();
-	$("#films-section").hide();
+	if ($("#features-link-1").hasClass("active-link")) {
+	$("#starting-content").slideDown();
+	$("#hidden-nav").slideUp();
+	$("#current-section").slideUp();
+	$("#interview-section").slideUp();
+	$("#features-section").slideUp();
+	$("#projects-section").slideUp();
+	$("#talks-section").slideUp();
+	$("#films-section").slideUp();
+	$("#features-link-1").removeClass("active-link");
+}	else {
+	$("#hidden-nav").show();
+	$("#starting-content").slideUp();
+	$("#current-section").slideUp();
+	$("#interview-section").slideUp();
+	$("#features-section").slideDown();
+	$("#projects-section").slideUp();
+	$("#talks-section").slideUp();
+	$("#films-section").slideUp();
+	$("#hidden-nav").removeClass("active-link");
+	$("#interviews-link-1").removeClass("active-link");
+	$("#projects-link-1").removeClass("active-link");
+	$("#talks-link-1").removeClass("active-link");
+	$("#films-link-1").removeClass("active-link");
+	$("#current-link-1").removeClass("active-link");
+	$("#features-link-1").addClass("active-link");
+}
 });
 
+
 $("#projects-link-1").click(function(){
-	$("#current-section").hide();
-	$("#interview-section").hide();
-	$("#features-section").hide();
-	$("#projects-section").show();
-	$("#talks-section").hide();
-	$("#films-section").hide();
+	if ($("#projects-link-1").hasClass("active-link")) {
+	$("#starting-content").slideDown();
+	$("#hidden-nav").slideUp();
+	$("#current-section").slideUp();
+	$("#interview-section").slideUp();
+	$("#features-section").slideUp();
+	$("#projects-section").slideUp();
+	$("#talks-section").slideUp();
+	$("#films-section").slideUp();
+	$("#projects-link-1").removeClass("active-link");
+}	else {
+	$("#hidden-nav").show();
+	$("#starting-content").slideUp();
+	$("#current-section").slideUp();
+	$("#interview-section").slideUp();
+	$("#features-section").slideUp();
+	$("#projects-section").slideDown();
+	$("#talks-section").slideUp();
+	$("#films-section").slideUp();
+	$("#hidden-nav").removeClass("active-link");
+	$("#interviews-link-1").removeClass("active-link");
+	$("#talks-link-1").removeClass("active-link");
+	$("#films-link-1").removeClass("active-link");
+	$("#current-link-1").removeClass("active-link");
+	$("#features-link-1").removeClass("active-link");
+	$("#projects-link-1").addClass("active-link");
+}
 });
 
 $("#talks-link-1").click(function(){
-	$("#current-section").hide();
-	$("#interview-section").hide();
-	$("#features-section").hide();
-	$("#projects-section").hide();
-	$("#talks-section").show();
-	$("#films-section").hide();
+	if ($("#talks-link-1").hasClass("active-link")) {
+	$("#starting-content").slideDown();
+	$("#hidden-nav").slideUp();
+	$("#current-section").slideUp();
+	$("#interview-section").slideUp();
+	$("#features-section").slideUp();
+	$("#projects-section").slideUp();
+	$("#talks-section").slideUp();
+	$("#films-section").slideUp();
+	$("#talks-link-1").removeClass("active-link");
+}	else {
+	$("#hidden-nav").show();
+	$("#starting-content").slideUp();
+	$("#current-section").slideUp();
+	$("#interview-section").slideUp();
+	$("#features-section").slideUp();
+	$("#projects-section").slideUp();
+	$("#talks-section").slideDown();
+	$("#films-section").slideUp();
+	$("#interviews-link-1").removeClass("active-link");
+	$("#projects-link-1").removeClass("active-link");
+	$("#films-link-1").removeClass("active-link");
+	$("#current-link-1").removeClass("active-link");
+	$("#features-link-1").removeClass("active-link");
+	$("#talks-link-1").addClass("active-link");
+}
 });
 
 $("#films-link-1").click(function(){
-	$("#current-section").hide();
-	$("#interview-section").hide();
-	$("#features-section").hide();
-	$("#projects-section").hide();
-	$("#talks-section").hide();
-	$("#films-section").show();
+	if ($("#films-link-1").hasClass("active-link")) {
+	$("#starting-content").slideDown();
+	$("#hidden-nav").slideUp();
+	$("#current-section").slideUp();
+	$("#interview-section").slideUp();
+	$("#features-section").slideUp();
+	$("#projects-section").slideUp();
+	$("#talks-section").slideUp();
+	$("#films-section").slideUp();
+	$("#films-link-1").removeClass("active-link");
+}	else {
+	$("#hidden-nav").show();
+	$("#starting-content").slideUp();
+	$("#current-section").slideUp();
+	$("#interview-section").slideUp();
+	$("#features-section").slideUp();
+	$("#projects-section").slideUp();
+	$("#talks-section").slideUp();
+	$("#films-section").slideDown();
+	$("#interviews-link-1").removeClass("active-link");
+	$("#projects-link-1").removeClass("active-link");
+	$("#talks-link-1").removeClass("active-link");
+	$("#current-link-1").removeClass("active-link");
+	$("#features-link-1").removeClass("active-link");
+	$("#films-link-1").addClass("active-link");
+}
 });
 
 });

@@ -76,11 +76,9 @@ body {
   .navigation a {
     color: black; }
 
-.current .column-one-third {
-  background: repeating-linear-gradient(45deg, red, red 10px, #DEE0E2 10px, #DEE0E2 20px); }
-
-.interviews .column-one-third {
-  background: repeating-linear-gradient(45deg, blue, blue 10px, #DEE0E2 10px, #DEE0E2 20px); }
+.active-link {
+  background: red;
+  color: white; }
 
 /******************************************
 /* TYPOGRAPHY

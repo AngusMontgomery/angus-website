@@ -96,24 +96,9 @@ body {
   	}
 }
 
-.current .column-one-third {
-	background: repeating-linear-gradient( 
-		45deg,
-  	red,
-  	red 10px,
-  	$background-color 10px,
-  	$background-color 20px
-);
-}
-
-.interviews .column-one-third {
-	background: repeating-linear-gradient( 
-		45deg,
-  	blue,
-  	blue 10px,
-  	$background-color 10px,
-  	$background-color 20px
-);
+.active-link {
+	background: red;
+	color: white;
 }
 
 
