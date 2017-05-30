@@ -29,7 +29,8 @@ $body-font: 'Karla', sans-serif;
 	margin-top: 2em;
 }
 img {
-	max-width:100%;
+	max-height: 15em;
+	max-width: 100%;
 	filter: grayscale(10%);
 }
 
@@ -94,6 +95,27 @@ body {
   	color: black;
   	}
 }
+
+.current .column-one-third {
+	background: repeating-linear-gradient( 
+		45deg,
+  	red,
+  	red 10px,
+  	$background-color 10px,
+  	$background-color 20px
+);
+}
+
+.interviews .column-one-third {
+	background: repeating-linear-gradient( 
+		45deg,
+  	blue,
+  	blue 10px,
+  	$background-color 10px,
+  	$background-color 20px
+);
+}
+
 
 
 /******************************************
