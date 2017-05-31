@@ -2,6 +2,8 @@ console.log('it works');
 
 $(document).ready(function() {
 
+$('.article-container').equalHeights();
+
 $("#hidden-nav").hide();
 $("#current-section").hide();
 $("#interview-section").hide();
@@ -9,6 +11,8 @@ $("#features-section").hide();
 $("#projects-section").hide();
 $("#talks-section").hide();
 $("#films-section").hide();
+
+
 
 $("#home-link").click(function(){
 	$("#starting-content").slideDown();

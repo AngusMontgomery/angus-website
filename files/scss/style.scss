@@ -19,6 +19,7 @@ Author: Me
 /*******************************************/
 
 $background-color: #DEE0E2;
+$hover-color: #F08C8C;
 $headline-font: 'Space Mono', monospace;
 $body-font: 'Karla', sans-serif;
 
@@ -37,6 +38,38 @@ img {
 h1, h2, h3 {
 	font-family: $headline-font;
 }
+
+.hidden-content h2 {
+		font-size: 3.5em;
+}
+	
+.article-container {
+ 	display: inline-block;
+ 	background-color:#f1f2f3;
+  	background-image:	linear-gradient(rgba(0,0,0,.015) 1px, transparent 1px), linear-gradient(0, rgba(0,0,0,.015) 1px, transparent 1px);
+  	background-size:5px 5px;
+  	background-position:-1px -1px, -1px -1px;
+
+	h3 {
+		font-size: 1.5em;
+	}
+
+	p {
+		padding-top: 2em;
+	}
+
+	img {
+		padding-top: 1.5em;
+	}
+}
+
+.article-container:hover {
+	background-color: $hover-color;
+  	background-image:	linear-gradient(rgba(0,0,0,.015) 1px, transparent 1px), linear-gradient(0, rgba(0,0,0,.015) 1px, transparent 1px);
+  	background-size:5px 5px;
+  	background-position:-1px -1px, -1px -1px;
+}
+
 
 p {
 	font-family: $body-font;
@@ -58,6 +91,11 @@ body {
 
 .grid-row {
 	clear: left;
+
+	a {
+	color: black;
+	text-decoration: none;
+	}
 }
 
 .intro {
@@ -94,12 +132,16 @@ body {
   	a {
   	color: black;
   	}
+  	li a:hover{
+  	background: $hover-color;
+  	}
 }
 
 .active-link {
 	background: red;
 	color: white;
 }
+
 
 
 
