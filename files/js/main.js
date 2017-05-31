@@ -13,8 +13,8 @@ $("#talks-section").hide();
 $("#films-section").hide();
 
 
-
 $("#home-link").click(function(){
+	event.preventDefault();
 	$("#starting-content").slideDown();
 	$("#hidden-nav").slideUp();
 	$("#current-section").slideUp();
@@ -26,6 +26,7 @@ $("#home-link").click(function(){
 })
 
 $("#current-link").click(function(){
+	event.preventDefault();
 	$("#hidden-nav").slideDown();
 	$("#starting-content").slideUp();
 	$("#current-section").slideDown();
@@ -43,6 +44,7 @@ $("#current-link").click(function(){
 });
 
 $("#interviews-link").click(function(){
+	event.preventDefault();
 	$("#hidden-nav").slideDown();
 	$("#starting-content").slideUp();
 	$("#current-section").hide();
@@ -60,6 +62,7 @@ $("#interviews-link").click(function(){
 });
 
 $("#features-link").click(function(){
+	event.preventDefault();
 	$("#hidden-nav").slideDown();
 	$("#starting-content").slideUp();
 	$("#current-section").hide();
@@ -77,6 +80,7 @@ $("#features-link").click(function(){
 });
 
 $("#projects-link").click(function(){
+	event.preventDefault();
 	$("#hidden-nav").slideDown();
 	$("#starting-content").slideUp();
 	$("#current-section").hide();
@@ -94,6 +98,7 @@ $("#projects-link").click(function(){
 });
 
 $("#talks-link").click(function(){
+	event.preventDefault();
 	$("#hidden-nav").slideDown();
 	$("#starting-content").slideUp();
 	$("#current-section").hide();
@@ -111,6 +116,7 @@ $("#talks-link").click(function(){
 });
 
 $("#films-link").click(function(){
+	event.preventDefault();
 	$("#hidden-nav").slideDown();
 	$("#starting-content").slideUp();
 	$("#current-section").hide();
@@ -128,6 +134,7 @@ $("#films-link").click(function(){
 });
 
 $("#current-link-1").click(function(){
+	event.preventDefault();
 if ($("#current-link-1").hasClass("active-link")) {
 	$("#starting-content").slideDown();
 	$("#hidden-nav").slideUp();
@@ -157,6 +164,7 @@ if ($("#current-link-1").hasClass("active-link")) {
 });
 
 $("#interviews-link-1").click(function(){
+	event.preventDefault();
 	if ($("#interviews-link-1").hasClass("active-link")) {
 	$("#starting-content").slideDown();
 	$("#hidden-nav").slideUp();
@@ -187,6 +195,7 @@ $("#interviews-link-1").click(function(){
 });
 
 $("#features-link-1").click(function(){
+	event.preventDefault();
 	if ($("#features-link-1").hasClass("active-link")) {
 	$("#starting-content").slideDown();
 	$("#hidden-nav").slideUp();
@@ -218,6 +227,7 @@ $("#features-link-1").click(function(){
 
 
 $("#projects-link-1").click(function(){
+	event.preventDefault();
 	if ($("#projects-link-1").hasClass("active-link")) {
 	$("#starting-content").slideDown();
 	$("#hidden-nav").slideUp();
@@ -248,6 +258,7 @@ $("#projects-link-1").click(function(){
 });
 
 $("#talks-link-1").click(function(){
+	event.preventDefault();
 	if ($("#talks-link-1").hasClass("active-link")) {
 	$("#starting-content").slideDown();
 	$("#hidden-nav").slideUp();
@@ -277,6 +288,7 @@ $("#talks-link-1").click(function(){
 });
 
 $("#films-link-1").click(function(){
+	event.preventDefault();
 	if ($("#films-link-1").hasClass("active-link")) {
 	$("#starting-content").slideDown();
 	$("#hidden-nav").slideUp();
